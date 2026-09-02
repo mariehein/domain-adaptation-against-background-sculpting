@@ -1,4 +1,4 @@
-# Domain Adapatation Against Background Sculpting
+# Domain Adaptation Against Background Sculpting
 
 This repository contains the code for the following paper:
 
