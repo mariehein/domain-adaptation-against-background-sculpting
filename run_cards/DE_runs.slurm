@@ -51,7 +51,6 @@ hidden_dim=256
 python run_DE.py \
     --signal_number ${signal_number} \
     --directory ${direc} \
-    --start_at_run 6  \
     --N_runs 10 \
     --epochs ${epochs} --batch_size ${batch_size} \
     --frequencies ${frequencies} --hidden_dim ${hidden_dim} \

@@ -27,14 +27,14 @@ input_set=${2}
 domain_adaptation=${3}
 samples_direc=""
 
-gen_direc="/hpcwork/p0025242/weak_supervision_domain_adaptation/domain_weight_None_ensemble5_start50/"
-#gen_direc="/hpcwork/p0025242/weak_supervision_domain_adaptation/domain_weight_${4}_regression/"
 DE_direc="/hpcwork/p0025242/weak_supervision_domain_adaptation/"
 
 if [[ "${domain_adaptation}" == "True" ]]; then
+    gen_direc="/hpcwork/p0025242/weak_supervision_domain_adaptation/domain_weight_${4}_ensemble5_start50/"
     direc="${gen_direc}${mode}/${input_set}_DA/Nsig_${signal_number}/"
     extra_args="-d"
 else
+    gen_direc="/hpcwork/p0025242/weak_supervision_domain_adaptation/domain_weight_None_ensemble5_start50/"
     direc="${gen_direc}${mode}/${input_set}/Nsig_${signal_number}/"
     extra_args=""
 fi
