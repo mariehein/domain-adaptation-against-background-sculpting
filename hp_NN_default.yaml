@@ -1,0 +1,8 @@
+layers: [64, 64, 64]
+lr: 1e-3
+dropout: 0
+momentum: 0.9
+weight_decay: 0
+batch_size: 128
+epochs: 100
+
